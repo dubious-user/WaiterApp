@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/start_order_btn"
-        android:text="Take My Order"
+        android:text="@string/take_order"
         android:onClick="takeOrder"
         app:layout_constraintBottom_toBottomOf="parent"
         android:padding="30dp"
@@ -23,7 +23,7 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the Waiter App!"
+        android:text="@string/greeter1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:textSize="16sp"
         android:layout_height="wrap_content"
-        android:text="I am your waiter. Shall I take your order?"
+        android:text="@string/greeter2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text1"

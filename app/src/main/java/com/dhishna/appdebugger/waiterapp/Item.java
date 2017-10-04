@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class Item implements Serializable{
 
-    public String name, rating, time, picLink, desc;
-    public int qty;
+    public String name, rating, time, desc;
+    public int qty, drawable;
     public float price;
 };

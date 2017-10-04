@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="food_names">
+        <item>Rice</item>
+        <item>French Fries</item>
+        <item>Burger</item>
+        <item>Pizza</item>
+        <item>Biriyani</item>
+
+    </string-array>
+    <string-array name="food_ratings">
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+        <item>5</item>
+
+    </string-array>
+    <array name="food_prices">
+        <item>25.0</item>
+        <item>30.0</item>
+        <item>60.0</item>
+        <item>80.0</item>
+        <item>100.0</item>
+
+    </array>
+    <string-array name="food_times">
+        <item>15mins</item>
+        <item>10mins</item>
+        <item>30mins</item>
+        <item>1hour</item>
+        <item>2hours</item>
+
+    </string-array>
+    <integer-array name="food_drawables">
+        <item>@drawable/rice2</item>
+        <item>@drawable/frenchfries2</item>
+        <item>@drawable/burger2</item>
+        <item>@drawable/pizza2</item>
+        <item>@drawable/biryani2</item>
+
+    </integer-array>
+    <string-array name="food_descriptions">
+        <item>The Staple food</item>
+        <item>Crunchy and spicy. its finger licking good</item>
+        <item>its big. its awesome. ugh! its big and awesome!</item>
+        <item>Everything goes round and round</item>
+        <item>Need I say more?</item>
+
+    </string-array>
+</resources>

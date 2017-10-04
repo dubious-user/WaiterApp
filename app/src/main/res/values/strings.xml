@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">WaiterApp</string>
+    <string name="take_order">Take My Order</string>
+    <string name="greeter1">Welcome to the Waiter App!</string>
+    <string name="greeter2">I am your waiter. Shall I take your order?</string>
+    <string name="gibberish">Some Text</string>
+    <string name="submit_suggestion">Submit Suggestion</string>
+    <string name="swipe_hint">Swipe</string>
+
 </resources>
