@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
     public void takeOrder(View v){
 
         // change the SelectScreenActivity name if needed to
-        startActivity(new Intent(this, SelectScreenActivity.class));
+        startActivity(new Intent(this, SelectionActivity.class));
     }
 }

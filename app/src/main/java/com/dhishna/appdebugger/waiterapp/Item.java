@@ -9,4 +9,5 @@ public class Item {
     public String name, rating, time, picLink, desc;
     public int qty;
     public float price;
-};
+
+    }
