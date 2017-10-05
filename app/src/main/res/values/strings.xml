@@ -5,6 +5,13 @@
     <string name="greeter2">I am your waiter. Shall I take your order?</string>
     <string name="gibberish">Some Text</string>
     <string name="submit_suggestion">Submit Suggestion</string>
-    <string name="swipe_hint">Swipe</string>
+    <string name="swipe_hint1">Give the order items a rating.</string>
+    <string name="swipe_hint2">It will help us make it better! :)</string>
+    <string name="swipe_hint3">(Swipe Left)</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="cancel_btn">Cancel Item</string>
+    <string name="edit_btn">Edit Item</string>
+    <string name="edit_item_qty_text">Select Quantity</string>
 
 </resources>

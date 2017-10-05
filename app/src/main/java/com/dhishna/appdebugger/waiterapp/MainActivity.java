@@ -11,12 +11,14 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
 
-    ArrayList<Item> orderedItems;
+    public static ArrayList<Item> orderedItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // clear back stack!!! TODO
 
         orderedItems = new ArrayList<>();
 
@@ -42,19 +44,19 @@ public class MainActivity extends AppCompatActivity {
 
         // uncomment the following statement to automatically redirect to list activity
         // takeOrder(new View(this));
-
+/*
         Intent intent = new Intent(this, SuggestionScreenActivity.class);
         intent.putExtra("orderedItems", orderedItems);
 
         startActivity(intent);
-    }
+*/    }
 
     public void takeOrder(View v){
 
         // change the SelectScreenActivity name if needed to
         // startActivity(new Intent(this, SelectScreenActivity.class));
-        Intent intent = new Intent(this, SuggestionScreenActivity.class);
-        intent.putExtra("orderedItems", orderedItems);
+        Intent intent = new Intent(this, ConfirmOrderActivity.class);
+//        intent.putExtra("orderedItems", orderedItems);
 
         startActivity(intent);
     }

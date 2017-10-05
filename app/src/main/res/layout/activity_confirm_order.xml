@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO possible bu, replace Linear layout with Constraint layout to really mess shit up -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dhishna.appdebugger.waiterapp.ConfirmOrderActivity"
+    android:background="@drawable/background3"
+    android:padding="20dp">
+
+<!-- TODO possible bug, mess the weight thing so that position is off -->
+    <ListView
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20dp"
+        android:id="@+id/ordered_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:onClick="confirmOrder"
+            android:padding="20dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/confirm_order" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/holo_red_light"
+            android:onClick="cancelOrder"
+            android:padding="20dp"
+            android:text="@string/cancel_order" />
+    </LinearLayout>
+</LinearLayout>

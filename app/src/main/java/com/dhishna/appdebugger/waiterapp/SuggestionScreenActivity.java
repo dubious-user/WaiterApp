@@ -15,11 +15,12 @@ import android.widget.Toast;
 import java.io.Console;
 import java.util.ArrayList;
 
+import static com.dhishna.appdebugger.waiterapp.MainActivity.orderedItems;
+
 public class SuggestionScreenActivity extends AppCompatActivity implements SuggestionFragment.RatingCallbackInterface{
 
     ViewPager mPager;
     PagerAdapter mPagerAdapter;
-    ArrayList<Item> orderedItems;
 
     public static int NUM_PAGES = 2;
 
@@ -30,9 +31,9 @@ public class SuggestionScreenActivity extends AppCompatActivity implements Sugge
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//TODO possible bug
-        Intent intent = getIntent();
-        orderedItems = (ArrayList<Item>) intent.getSerializableExtra("orderedItems");
+        // TODO possible bug 2, uncomment the following 2 lines, to make the app crash when reached suggest activity
+        //Intent intent = getIntent();
+        //orderedItems = (ArrayList<Item>) intent.getSerializableExtra("orderedItems");
         for(Item item : orderedItems){
             Log.d("OrderedItems", "name : " + item.name);
         }
@@ -91,9 +92,18 @@ public class SuggestionScreenActivity extends AppCompatActivity implements Sugge
 
     public void giveSuggestion(View v){
         Toast.makeText(this, "Thank you for your suggestion.", Toast.LENGTH_SHORT).show();
+        /*
+
+        not necessary
+
         for(Item item : orderedItems){
             Log.d("ratings", "ratings : " + item.rating);
         }
+        */
+
+        MainActivity.orderedItems = null;
+
+        startActivity(new Intent(this, MainActivity.class));
     }
 
 
