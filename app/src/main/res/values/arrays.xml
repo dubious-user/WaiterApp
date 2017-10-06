@@ -25,11 +25,11 @@
 
     </array>
     <string-array name="food_times">
-        <item>15mins</item>
-        <item>10mins</item>
-        <item>30mins</item>
-        <item>1hour</item>
-        <item>2hours</item>
+        <item>15 mins</item>
+        <item>10 mins</item>
+        <item>30 mins</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
 
     </string-array>
     <integer-array name="food_drawables">
@@ -46,6 +46,55 @@
         <item>its big. its awesome. ugh! its big and awesome!</item>
         <item>Everything goes round and round</item>
         <item>Need I say more?</item>
+
+    </string-array>
+
+    <string-array name="bev_names">
+        <item>Fresh Lime</item>
+        <item>Cola</item>
+        <item>Root Beer</item>
+        <item>Sharjah Shake</item>
+        <item>Lassi</item>
+
+    </string-array>
+    <string-array name="bev_ratings">
+        <item>5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+    <array name="bev_prices">
+        <item>15.0</item>
+        <item>10.0</item>
+        <item>30.0</item>
+        <item>45.0</item>
+        <item>25.0</item>
+
+    </array>
+    <string-array name="bev_times">
+        <item>2 mins</item>
+        <item>1 min</item>
+        <item>1 mins</item>
+        <item>10 mins</item>
+        <item>5 mins</item>
+
+    </string-array>
+    <integer-array name="bev_drawables">
+        <item>@drawable/freshlime</item>
+        <item>@drawable/cola</item>
+        <item>@drawable/rootbeer</item>
+        <item>@drawable/sharjah</item>
+        <item>@drawable/lassi</item>
+
+    </integer-array>
+    <string-array name="bev_descriptions">
+        <item>The king of sweet drinks. Its for the common man!</item>
+        <item>Infamously called a pesticide. We\'re sure its safe</item>
+        <item>its beer. woah! its non-alcoholic. But it has all the taste, of roots :)</item>
+        <item>Its probably the most common milkshake ever, but rich with icecream!</item>
+        <item>Its probably good for your digestion.</item>
 
     </string-array>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <!-- TODO possible bug, if the id of this list is set manually and used in selection activity, app crashes requiring that listview must be androi:id
+    -->
+    <ListView
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20dp"
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

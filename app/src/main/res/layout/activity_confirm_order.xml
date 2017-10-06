@@ -40,8 +40,9 @@
             android:layout_marginRight="5dp"
             android:text="@string/confirm_order" />
 
+        <!-- TODO replace cancel_order_btn with cancel_btn for crash -->
         <Button
-            android:id="@+id/cancel_btn"
+            android:id="@+id/cancel_order_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

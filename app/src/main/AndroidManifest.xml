@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SuggestionScreenActivity" />
-        <activity android:name=".ConfirmOrderActivity"></activity>
+        <activity android:name=".ConfirmOrderActivity" />
+        <activity android:name=".SelectionActivity"></activity>
     </application>
 
 </manifest>

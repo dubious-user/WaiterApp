@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -54,9 +55,12 @@ public class ConfirmOrderActivity extends AppCompatActivity implements OrderItem
     public void refreshList(){
         adapter = new OrderListItemAdapter(this, orderedItems);
         listView.setAdapter(adapter);
+        if(MainActivity.orderedItems.size() == 0){
+            ((Button)findViewById(R.id.confirm_btn)).setEnabled(false);
+        }
     }
 
-    public void cancelOrder(){
+    public void cancelOrder(View view){
         MainActivity.orderedItems = null;
         startActivity(new Intent(this, MainActivity.class));
     }

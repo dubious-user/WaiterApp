@@ -13,5 +13,9 @@
     <string name="cancel_btn">Cancel Item</string>
     <string name="edit_btn">Edit Item</string>
     <string name="edit_item_qty_text">Select Quantity</string>
+    <string name="see_order_btn">See Order</string>
+    <string name="show_more_btn">Show Details</string>
+    <string name="order_btn">Order Item</string>
+    <string name="no_item_ordered">Order of 0 items</string>
 
 </resources>

@@ -44,7 +44,7 @@ public class OrderListItemAdapter extends ArrayAdapter{
                     //Toast.makeText(activity, "Edited " + items.get(position).name, Toast.LENGTH_SHORT).show();
                     OrderItemEditDialog editDialog = new OrderItemEditDialog();
                     editDialog.onAttach(activity);
-                    editDialog.setIndex(position);
+                    editDialog.setData(position, 2);
                     editDialog.show(activity.getSupportFragmentManager(),"OrderEditDialog");
                 }
             });

@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
     public static ArrayList<Item> orderedItems;
+    public static ArrayList<Item> foodItems, beverages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         // clear back stack!!! TODO
 
         orderedItems = new ArrayList<>();
+        foodItems = new ArrayList<>();
+        beverages = new ArrayList<>();
 
         TypedArray food_names = getResources().obtainTypedArray(R.array.food_names);
         TypedArray food_ratings = getResources().obtainTypedArray(R.array.food_ratings);
@@ -29,17 +31,37 @@ public class MainActivity extends AppCompatActivity {
         TypedArray food_descriptions = getResources().obtainTypedArray(R.array.food_descriptions);
         TypedArray food_drawables = getResources().obtainTypedArray(R.array.food_drawables);
 
+        TypedArray bev_names = getResources().obtainTypedArray(R.array.bev_names);
+        TypedArray bev_ratings = getResources().obtainTypedArray(R.array.bev_ratings);
+        TypedArray bev_prices = getResources().obtainTypedArray(R.array.bev_prices);
+        TypedArray bev_times = getResources().obtainTypedArray(R.array.bev_times);
+        TypedArray bev_descriptions = getResources().obtainTypedArray(R.array.bev_descriptions);
+        TypedArray bev_drawables = getResources().obtainTypedArray(R.array.bev_drawables);
+
         for(int i = 0; i < food_names.length(); ++i){
             Item item = new Item();
             item.name = food_names.getString(i);
             item.desc = food_descriptions.getString(i);
             item.drawable = food_drawables.getResourceId(i, -1);
             item.price = food_prices.getFloat(i, 0);
-            item.qty = 0;
+            item.qty = 1;
             item.rating = food_ratings.getString(i);
             item.time = food_times.getString(i);
 
-            orderedItems.add(item);
+            foodItems.add(item);
+        }
+
+        for(int i = 0; i < food_names.length(); ++i){
+            Item item = new Item();
+            item.name = bev_names.getString(i);
+            item.desc = bev_descriptions.getString(i);
+            item.drawable = bev_drawables.getResourceId(i, -1);
+            item.price = bev_prices.getFloat(i, 0);
+            item.qty = 1;
+            item.rating = bev_ratings.getString(i);
+            item.time = bev_times.getString(i);
+
+            beverages.add(item);
         }
 
         // uncomment the following statement to automatically redirect to list activity
@@ -55,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         // change the SelectScreenActivity name if needed to
         // startActivity(new Intent(this, SelectScreenActivity.class));
-        Intent intent = new Intent(this, ConfirmOrderActivity.class);
+        Intent intent = new Intent(this, SelectionActivity.class);
 //        intent.putExtra("orderedItems", orderedItems);
 
         startActivity(intent);
