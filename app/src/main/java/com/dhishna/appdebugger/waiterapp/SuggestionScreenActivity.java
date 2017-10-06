@@ -103,7 +103,9 @@ public class SuggestionScreenActivity extends AppCompatActivity implements Sugge
 
         MainActivity.orderedItems = null;
 
-        startActivity(new Intent(this, MainActivity.class));
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
 
