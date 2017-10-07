@@ -24,15 +24,19 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Log.d("HERERE", "bef");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.d("HERERE", "aft");
         // clear back stack!!! TODO
 
         orderedItems = new ArrayList<>();
         foodItems = new ArrayList<>();
         beverages = new ArrayList<>();
 
+        Log.d("HERERE", "inintse");
         TypedArray food_names = getResources().obtainTypedArray(R.array.food_names);
         TypedArray food_ratings = getResources().obtainTypedArray(R.array.food_ratings);
         TypedArray food_prices = getResources().obtainTypedArray(R.array.food_prices);
@@ -47,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         TypedArray bev_descriptions = getResources().obtainTypedArray(R.array.bev_descriptions);
         TypedArray bev_drawables = getResources().obtainTypedArray(R.array.bev_drawables);
 
+        Log.d("HERERE", "loaded");
         for(int i = 0; i < food_names.length(); ++i){
             Item item = new Item();
             item.name = food_names.getString(i);
@@ -75,9 +80,11 @@ public class MainActivity extends AppCompatActivity {
             beverages.add(item);
         }
 
+        Log.d("HERERE", "aft loop");
         new ImageLoader().execute(foodItems);
         new ImageLoader().execute(beverages);
 
+        Log.d("HERERE", "called tasks");
         // uncomment the following statement to automatically redirect to list activity
         // takeOrder(new View(this));
 /*
@@ -125,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 item.drawable = drawable;
+                bMap.recycle();
                 //After the drawable is loaded, onPostExecute is called
             }
             return null;

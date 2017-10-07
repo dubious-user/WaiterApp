@@ -38,6 +38,7 @@ public class SelectionActivity extends AppCompatActivity implements OrderItemEdi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("HERERE", "sel act beg");
         //TODO possible bug, if activity_selection is replaced with activity_main. it crashes
         setContentView(R.layout.activity_selection);
 
@@ -45,6 +46,8 @@ public class SelectionActivity extends AppCompatActivity implements OrderItemEdi
         viewPager = (ViewPager) findViewById(R.id.pager);
         viewPager.setAdapter(adapter);
 
+
+        Log.d("HERERE", "sel act inited");
 
         ActionBar actionBar = getSupportActionBar();
 
@@ -54,6 +57,9 @@ public class SelectionActivity extends AppCompatActivity implements OrderItemEdi
                 getSupportActionBar().setSelectedNavigationItem(position);
             }
         });
+
+
+        Log.d("HERERE", "beffff");
 
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         ActionBar.TabListener tabListener = new ActionBar.TabListener() {
@@ -76,6 +82,9 @@ public class SelectionActivity extends AppCompatActivity implements OrderItemEdi
         };
         actionBar.addTab(actionBar.newTab().setText("Food").setTabListener(tabListener));
         actionBar.addTab(actionBar.newTab().setText("Beverages").setTabListener(tabListener));
+
+
+        Log.d("HERERE", "last");
     }
 
     public static class myAdapter extends FragmentPagerAdapter {
@@ -110,6 +119,7 @@ public class SelectionActivity extends AppCompatActivity implements OrderItemEdi
 
             args.putInt("use",position);
             arrayListFrag.setArguments(args);
+            Log.d("HERERE", "neww instance");
 
             return arrayListFrag;
         }

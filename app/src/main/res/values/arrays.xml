@@ -33,11 +33,11 @@
 
     </string-array>
     <integer-array name="food_drawables">
-        <item>@drawable/rice2</item>
-        <item>@drawable/frenchfries2</item>
-        <item>@drawable/burger2</item>
-        <item>@drawable/pizza2</item>
-        <item>@drawable/biryani2</item>
+        <item>@drawable/ricea</item>
+        <item>@drawable/frenchfriesa</item>
+        <item>@drawable/burgera</item>
+        <item>@drawable/pizzaa</item>
+        <item>@drawable/biriyania</item>
 
     </integer-array>
     <string-array name="food_descriptions">
@@ -82,11 +82,11 @@
 
     </string-array>
     <integer-array name="bev_drawables">
-        <item>@drawable/freshlime</item>
-        <item>@drawable/cola</item>
-        <item>@drawable/rootbeer</item>
-        <item>@drawable/sharjah</item>
-        <item>@drawable/lassi</item>
+        <item>@drawable/freshlimea</item>
+        <item>@drawable/colaa</item>
+        <item>@drawable/rootbeera</item>
+        <item>@drawable/sharjaha</item>
+        <item>@drawable/lassia</item>
 
     </integer-array>
     <string-array name="bev_descriptions">

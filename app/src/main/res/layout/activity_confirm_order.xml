@@ -7,8 +7,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/darkerColor"
     tools:context="com.dhishna.appdebugger.waiterapp.ConfirmOrderActivity"
-    android:background="@drawable/background3"
     android:padding="20dp">
 
 <!-- TODO possible bug, mess the weight thing so that position is off -->

@@ -9,5 +9,6 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="darkColor">#FF35383E</color>
+    <color name="darkerColor">#DD13161C</color>
     <color name="lighterDarkColor">#FF5C5A5A</color>
 </resources>
