@@ -1,5 +1,7 @@
 package com.dhishna.appdebugger.waiterapp;
 
+import android.graphics.drawable.Drawable;
+
 import java.io.Serializable;
 
 /**
@@ -9,6 +11,7 @@ import java.io.Serializable;
 public class Item implements Serializable{
 
     public String name, rating, time, desc;
-    public int qty, drawable;
+    public int qty, drawable_id;
+    public Drawable drawable;
     public float price;
 };

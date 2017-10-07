@@ -50,7 +50,7 @@ public class SuggestionFragment extends Fragment {
             //TODO possible bug, if data is not checked to be null, app crashes when layou changes
             if (data != null) {
                 ((TextView) rootView.findViewById(R.id.item_name)).setText(data.name);
-                ((ImageView) rootView.findViewById(R.id.item_image)).setImageResource(data.drawable);
+                ((ImageView) rootView.findViewById(R.id.item_image)).setImageDrawable(data.drawable);
 
                 RatingBar ratingBar = (RatingBar) rootView.findViewById(R.id.item_rating);
                 ratingBar.setOnClickListener(new View.OnClickListener() {

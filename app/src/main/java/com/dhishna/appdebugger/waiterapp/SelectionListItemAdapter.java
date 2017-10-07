@@ -63,7 +63,7 @@ public class SelectionListItemAdapter extends ArrayAdapter{
         //TODO before deployment more details have to be instantiated here
         if(items != null) {
             Log.d("ORDER " , "posiion while : " + position);
-            ((ImageView) convertView.findViewById(R.id.item_image)).setImageResource(items.get(position).drawable);
+            ((ImageView) convertView.findViewById(R.id.item_image)).setImageDrawable(items.get(position).drawable);
             ((TextView) convertView.findViewById(R.id.item_name)).setText(items.get(position).name);
             ((TextView) convertView.findViewById(R.id.item_price)).setText("Unit Price : Rs. "+items.get(position).price);
             ((TextView) convertView.findViewById(R.id.item_time)).setText("Time To Prepare : " + items.get(position).time);

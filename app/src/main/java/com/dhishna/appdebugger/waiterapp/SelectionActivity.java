@@ -1,6 +1,8 @@
 package com.dhishna.appdebugger.waiterapp;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -18,9 +20,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.HashMap;
 
 //TODO not implementing the interface causes crash
 public class SelectionActivity extends AppCompatActivity implements OrderItemEditDialog.OnChangeQtyInterface{
@@ -176,4 +181,5 @@ public class SelectionActivity extends AppCompatActivity implements OrderItemEdi
     public void refreshList(){
         ((TextView)findViewById(R.id.order_item_count)).setText("Order of " + MainActivity.orderedItems.size() + " items.");
     }
+
 }
